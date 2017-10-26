@@ -6,24 +6,24 @@
   <div class="form-group row">
     <label for="nome" class="col-xs-1 col-form-label">Nome</label>
     <div class="col-xs-7">
-    <input type="text" [(ngModel)]="nome" class="form-control" id="nome" name='nome' >
+    <input type="text" [(ngModel)]="contato.nome" class="form-control" id="nome" name='nome' >
     </div>
-    <div class="col-xs-4">{{nome}}</div>
+    <div class="col-xs-4">{{contato.nome}}</div>
  </div>
   <div class="form-group row">
     <label for="telefone" class="col-xs-1 col-form-label">Telefone</label>
     <div class="col-xs-7">
-    <input type="text" class="form-control" id="telefone" name='telefone' >
+    <input type="text" [(ngModel)]="contato.telefone" class="form-control" id="telefone" name='telefone' >
     </div>
-    <div class="col-xs-4">.</div>
+    <div class="col-xs-4">{{contato.telefone}}</div>
  </div>
 
   <div class="form-group row">
     <label for="email" class="col-xs-1 col-form-label">Email</label>
     <div class="col-xs-7">
-    <input type="email" class="form-control" id="email" name='email' >
+    <input type="email" [(ngModel)]="contato.email" class="form-control" id="email" name='email' >
     </div>
-    <div class="col-xs-4">.</div>
+    <div class="col-xs-4">{{contato.email}}</div>
  </div>
 <!--
  <div class="form-group row">
@@ -36,7 +36,7 @@
 -->
 
 
-
+o
 
 
 <div class="form-group row">

@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 
+import {Contato} from "../entidades/contato.service";
+
 @Component({
     moduleId: module.id,
     selector: 'cadastro',
@@ -9,6 +11,13 @@ import {Component} from '@angular/core';
 
 export class CadastroComponent{
 
-    nome:string = "Marco";
+    contato:Contato;
+    
+    constructor(contato:Contato){
+         this.contato = contato;
+         
+          }
+
+
 
 }

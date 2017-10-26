@@ -8,21 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var contato_service_1 = require("../entidades/contato.service");
-var CadastroComponent = (function () {
-    function CadastroComponent(contato) {
-        this.contato = contato;
+var core_1 = require("@angular/core");
+var Contato = (function () {
+    function Contato() {
     }
-    CadastroComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'cadastro',
-            templateUrl: './cadastro.component.html'
-        }), 
-        __metadata('design:paramtypes', [contato_service_1.Contato])
-    ], CadastroComponent);
-    return CadastroComponent;
+    Contato = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], Contato);
+    return Contato;
 }());
-exports.CadastroComponent = CadastroComponent;
-//# sourceMappingURL=cadastro.component.js.map
+exports.Contato = Contato;
+//# sourceMappingURL=contato.service.js.map
