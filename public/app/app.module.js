@@ -19,6 +19,7 @@ var cadastro_component_1 = require('./cadastro/cadastro.component');
 var app_routes_1 = require('./app.routes');
 require('rxjs/add/operator/map');
 var contato_service_1 = require('./entidades/contato.service');
+var contatoDAO_service_1 = require('./entidades/contatoDAO.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,7 +27,7 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, app_routes_1.routing],
             declarations: [app_component_1.AppComponent, cabecalho_component_1.CabecalhoComponent, cadastro_component_1.CadastroComponent, pag1_component_1.Pag1Component],
-            providers: [contato_service_1.Contato],
+            providers: [contato_service_1.Contato, contatoDAO_service_1.ContatoDAO],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

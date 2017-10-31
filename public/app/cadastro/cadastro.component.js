@@ -10,17 +10,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var contato_service_1 = require("../entidades/contato.service");
+var contatoDAO_service_1 = require("../entidades/contatoDAO.service");
 var CadastroComponent = (function () {
-    function CadastroComponent(contato) {
+    function CadastroComponent(contato, contatoDAO) {
         this.contato = contato;
+        this.contatoDAO = contatoDAO;
     }
+    CadastroComponent.prototype.cadastrar = function (event) {
+        var _this = this;
+        event.preventDefault();
+        this.contatoDAO.cadastra(this.contato).subscribe(function () { console.log(_this.contato); });
+    };
     CadastroComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'cadastro',
             templateUrl: './cadastro.component.html'
         }), 
-        __metadata('design:paramtypes', [contato_service_1.Contato])
+        __metadata('design:paramtypes', [contato_service_1.Contato, contatoDAO_service_1.ContatoDAO])
     ], CadastroComponent);
     return CadastroComponent;
 }());
